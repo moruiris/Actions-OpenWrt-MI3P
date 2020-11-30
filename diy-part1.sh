@@ -14,4 +14,4 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git OpenWrt_hjp521 https://github.com/hjp521/OpenWrt-packages' feeds.conf.default
+#sed -i '$a src-git OpenWrt_moruiris https://github.com/moruiris/OpenWrt-packages' feeds.conf.default
