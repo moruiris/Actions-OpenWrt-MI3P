@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-closed
+name: Build OpenWrt
 
 on:
   repository_dispatch:
@@ -18,9 +18,7 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:	
-    - cron: 0 08 * * *
-      
+
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
