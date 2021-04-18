@@ -8,8 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-closed
-
+name: Build-R3P-closed
 on:
   repository_dispatch:
   workflow_dispatch:
