@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-open
+name: Build-R3P-Open
 
 on:
   repository_dispatch:
@@ -172,8 +172,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: ${{ env.FILE_TIME }} 「 R3P-open 」
-        tag_name: ${{ steps.tag.outputs.release_tag }} 「 R3P-open 」
+        name: ${{ env.FILE_TIME }} 「 R3P-Open 」
+        tag_name: ${{ steps.tag.outputs.release_tag }} 「 R3P-Open 」
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
