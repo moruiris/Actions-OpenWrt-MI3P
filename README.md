@@ -8,6 +8,8 @@
 
 感谢[P3TERX](https://github.com/P3TERX/Actions-OpenWrt)珠玉在前.
 
+[Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+
 ## 使用教程:
 编译固件后台地址：192.168.1.1 密码:password
 
