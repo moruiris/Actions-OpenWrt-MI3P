@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Openwrt-lede.x86-64
+name: Build-lede-x86-64
 
 on:
   repository_dispatch:
@@ -173,8 +173,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
-        name: ${{ env.FILE_TIME }} 「 openwrt5.4-X86-64 」
-        tag_name: ${{ steps.tag.outputs.release_tag }} 「 openwrt5.4-X86-64 」
+        name: ${{ env.FILE_TIME }} 「 lede-x86-64 」
+        tag_name: ${{ steps.tag.outputs.release_tag }} 「 lede-x86-64 」
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
         
