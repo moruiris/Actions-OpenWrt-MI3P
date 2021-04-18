@@ -172,7 +172,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
+        name: ${{ env.FILE_TIME }} 「 R3P-open 」
+        tag_name: ${{ steps.tag.outputs.release_tag }} 「 R3P-open 」
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
@@ -186,7 +187,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 3
+        keep_latest: 9
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
