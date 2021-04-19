@@ -174,10 +174,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         name: ${{ env.FILE_TIME }} 「 lede-x86-64 」
-        tag_name: ${{ steps.tag.outputs.release_tag }} 「 lede-x86-64 」
+        tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
-        
+
     - name: Delete workflow runs 删除workflow
       uses: GitRML/delete-workflow-runs@main
       with:
