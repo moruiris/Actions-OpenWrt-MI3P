@@ -17,7 +17,7 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 04 * * *
+    - cron: 0 08 * * *
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -182,12 +182,12 @@ jobs:
       uses: GitRML/delete-workflow-runs@main
       with:
         retain_days: 7
-        keep_minimum_runs: 1
+        keep_minimum_runs: 0
     - name: Remove old Releases 删除旧的Releases
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 9
+        keep_latest: 10
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
