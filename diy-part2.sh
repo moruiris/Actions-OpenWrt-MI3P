@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2019-2020 P3TERX <https://github.com/moruiris/Actions-OpenWrt-Lede>
+# Copyright (c) 2020-2021 moruiris <https://github.com/moruiris/Actions-OpenWrt-Lede>
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
